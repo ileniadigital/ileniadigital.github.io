@@ -3,11 +3,11 @@ import Image from "next/image";
 // Navigation component
 export default function Nav() {
     return (
-        <nav className="flex flex-row justify-center items-center ">
+        <nav className="flex flex-row justify-center items-center bg-slate-800">
             {/* Logo */}
-            <Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={50} height={50} />
+            <Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={50} height={50} className="items-start" />
             {/* Navigational menu */}
-            <ul className="flex flex-row gap-10">
+            <ul className="flex flex-row gap-10 ml-20">
                 <li>
                     <a href="/">Home</a>
                 </li>
