@@ -27,7 +27,7 @@ const jobs = [
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-offwhite'>
       {/* Navigation menu */}
       <Nav />
       <main>

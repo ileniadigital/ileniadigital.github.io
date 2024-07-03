@@ -28,10 +28,10 @@ export default function Hero() {
         <div>
             <main>
                 {/* Hero section */}
-                <div className='flex flex-row bg-yellow'>
+                <div className='flex flex-row'>
                     <div className='flex flex-col gap-5'>
                         <h1 className='text-5xl'>Hi I am Ilenia!</h1>
-                        <h2 className='text-2xl'>Amazon Future Engineer. Front-end Developer. Freelancer</h2>
+                        <h2 className='text-2xl'>Amazon Future Engineer. Front-end Developer. Content Creator</h2>
                         {/* Programming languages icons */}
                         <div>
 

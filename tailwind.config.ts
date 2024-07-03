@@ -18,7 +18,8 @@ const config: Config = {
         lightgreen: "#29BF12",
         yellow: "#F9CC00",
         lightblue: "#08BDBD",
-        pink: "#F21B3F"
+        pink: "#F21B3F",
+        offwhite: '#fdf4dc',
       }
     },
   },

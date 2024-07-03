@@ -7,18 +7,18 @@ export default function Nav() {
             {/* Logo */}
             <Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={50} height={50} />
             {/* Navigational menu */}
-            <ul className="flex flex-row gap-10 ml-auto mr-auto text-white text-lg bg-darkgreen p-5 rounded-full mt-3">
+            <ul className="flex flex-row gap-10 ml-auto mr-auto text-darkgreen text-lg">
                 <li>
-                    <a href="/" className="hover:text-yellow hover:font-bold">Home</a>
+                    <a href="/" className="hover:text-xl hover:font-bold">Home</a>
                 </li>
                 <li>
-                    <a href="/about" className="hover:text-yellow hover:font-bold">About</a>
+                    <a href="/about" className="hover:text-xl hover:font-bold">About</a>
                 </li>
                 <li>
-                    <a href="/projects" className="hover:text-yellow hover:font-bold">Projects</a>
+                    <a href="/projects" className="hover:text-xl hover:font-bold">Projects</a>
                 </li>
                 <li>
-                    <a href="/contact" className="hover:text-yellow hover:font-bold">Contact</a>
+                    <a href="/contact" className="hover:text-xl hover:font-bold">Contact</a>
                 </li>
             </ul>
         </nav>
