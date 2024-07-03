@@ -1,7 +1,7 @@
-import Image from 'next/image';
+// Import UI components
 import Nav from './ui/nav';
 import Footer from './ui/footer';
-import { TypewriterEffect } from './ui/home/type-writer-effect';
+import Hero from './ui/home/hero';
 
 const name = [
   {
@@ -28,28 +28,13 @@ const jobs = [
 export default function Home() {
   return (
     <div>
+      {/* Navigation menu */}
       <Nav />
       <main>
         {/* Hero section */}
-        <div className='flex flex-row bg-yellow'>
-          <div className='flex flex-col gap-5'>
-            <h1 className='text-5xl'>Hi I am Ilenia!</h1>
-            <h2 className='text-2xl'>Amazon Future Engineer. Front-end Developer. Freelancer</h2>
-            {/* Programming languages icons */}
-            <div>
-
-            </div>
-            <button className='w-48 rounded-full bg-darkgreen p-3 text-white hover:text-yellow'><a href="/projects">See my projects</a></button>
-          </div>
-
-          {/* Portrait */}
-          <figure>
-            <Image src='/images/portrait.png' alt="yellow, green and pink portrait of Ilenia" width={300} height={900}></Image>
-          </figure>
-
-        </div >
-
+        <Hero />
       </main >
+      {/* Footer */}
       <Footer />
     </div >
   );
