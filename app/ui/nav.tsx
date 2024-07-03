@@ -22,7 +22,7 @@ export default function Nav() {
                     <a href="/projects" className="hover:text-2xl hover:font-bold">Projects</a>
                 </li>
                 <li>
-                    <button><a href="/contact" className="bg-darkgreen text-yellow rounded-full p-3 hover:text-2xl hover:font-bold">Contact</a></button>
+                    <button><a href="/contact" className="bg-darkgreen text-yellow hover:text-darkgreen hover:bg-yellow rounded-full p-3 hover:text-2xl hover:font-bold">Contact</a></button>
                 </li>
             </ul>
         </nav>
