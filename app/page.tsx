@@ -2,6 +2,7 @@
 import Nav from './ui/nav';
 import Footer from './ui/footer';
 import Hero from './ui/home/hero';
+import Languages from './ui/home/languages';
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <main>
         {/* Hero section */}
         <Hero />
+        {/* Programming Languages */}
+        <Languages />
       </main >
       {/* Footer */}
       <Footer />
