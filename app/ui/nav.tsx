@@ -18,7 +18,7 @@ export default function Nav() {
                     <a href="/projects" className="hover:text-xl hover:font-bold">Projects</a>
                 </li>
                 <li>
-                    <a href="/contact" className="hover:text-xl hover:font-bold">Contact</a>
+                    <button><a href="/contact" className="bg-darkgreen text-yellow rounded-full p-3 hover:text-xl hover:font-bold">Contact</a></button>
                 </li>
             </ul>
         </nav>
