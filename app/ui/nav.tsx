@@ -5,9 +5,13 @@ export default function Nav() {
     return (
         <nav className="flex flex-row items-center w-full">
             {/* Logo */}
-            <Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={50} height={50} />
+            <div className="flex flex-row items-center">
+                <a href="/"><Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={75} height={75} /></a>
+                <h1 className="text-2xl text-darkgreen font-bold">Ilenia Maietta</h1>
+            </div>
+
             {/* Navigational menu */}
-            <ul className="flex flex-row gap-10 ml-auto mr-auto text-darkgreen text-lg">
+            <ul className="flex flex-row gap-10 ml-auto mr-5 text-darkgreen text-lg">
                 <li>
                     <a href="/" className="hover:text-xl hover:font-bold">Home</a>
                 </li>
