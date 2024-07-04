@@ -16,8 +16,11 @@ const languages = [
 
 export default function Languages() {
     return (
-        <section>
-            <h4 className="text-darkgreen text-3xl font-bold">Programming Languages</h4>
+        <section className="flex flex-col justify-center items-center gap-10">
+            <div className="bg-darkgreen w-full flex justify-center">
+                <h4 className="text-yellow text-3xl font-bold">Programming Languages</h4>
+            </div>
+
             <div className='flex flex-row gap-16 justify-center'>
                 {languages.map((language, index) => (
                     <Card key={index} language={language} />
