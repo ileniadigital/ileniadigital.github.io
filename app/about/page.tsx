@@ -1,10 +1,9 @@
-import Image from 'next/image';
-
 // Import UI components
 import Nav from '../ui/nav';
 import Footer from '../ui/footer';
 import Aside from '../ui/about/aside';
 import Education from '../ui/about/education';
+import Experience from '../ui/about/experience';
 
 export default function About() {
     return (
@@ -21,6 +20,7 @@ export default function About() {
                         </p>
                     </div>
                     <Education />
+                    <Experience />
                 </div>
             </main>
             <Footer />

@@ -1,7 +1,7 @@
 export default function Aside() {
     return (
         <aside className="w-1/4 bg-main h-screen">
-            <ul className="flex flex-col gap-4 text-white text-xl fixed ml-3">
+            <ul className="flex flex-col gap-4 text-white text-xl fixed ml-3 mt-7">
                 <li className="hover:text-2xl hover:font-bold">
                     <a>About me</a>
                 </li>
