@@ -13,7 +13,7 @@ export default function Nav() {
             {/* Navigational menu */}
             <ul className="flex flex-row gap-10 ml-auto mr-5 text-main text-xl">
                 <li>
-                    <a href="/" className="hover:text-2xl hover:font-bold">Home</a>
+                    <a href="/" className="lnk">Home</a>
                 </li>
                 <li>
                     <a href="/about" className="hover:text-2xl hover:font-bold">About</a>
@@ -22,7 +22,7 @@ export default function Nav() {
                     <a href="/projects" className="hover:text-2xl hover:font-bold">Projects</a>
                 </li>
                 <li>
-                    <button><a href="/contact" className="bg-main text-black hover:text-black hover:bg-main rounded-full p-3 hover:text-2xl hover:font-bold">Contact</a></button>
+                    <button><a href="/contact" className="btn">Contact</a></button>
                 </li>
             </ul>
         </nav>
