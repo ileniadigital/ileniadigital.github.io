@@ -45,7 +45,7 @@ export default function Hero() {
                         <div>
 
                         </div>
-                        <button className='w-52 ml-32 text-lg btn hover:text-lg'><a href="/projects">See my projects</a></button>
+                        <button className='w-56 ml-32 text-xl btn '><a href="/projects">See my projects</a></button>
                     </div>
 
                     {/* Portrait */}
