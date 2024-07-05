@@ -22,10 +22,12 @@ const modules = [
 export default function Education() {
     return (
         <section className="mt-5">
-            <h1 className='text-3xl font-bold'>Education</h1>
-            <h2 className='text-2xl font-bold mt-3'>MSci Computer Science</h2>
-            <h2 className='text-2xl font-bold mt-2'>Queen Mary University of London (2022-2026)</h2>
-            <p>Information about university</p>
+            <div className="ml-5">
+                <h1 className='text-3xl font-bold'>Education</h1>
+                <h2 className='text-2xl font-bold mt-3'>MSci Computer Science</h2>
+                <h2 className='text-2xl font-bold mt-2'>Queen Mary University of London (2022-2026)</h2>
+                <p>Information about university</p>
+            </div>
             <Cards elements={modules} title="Modules studied" image={false} autofit />
         </section>
     );
