@@ -17,7 +17,7 @@ const languages = [
 export default function Languages() {
     return (
         <section className="flex flex-col justify-center items-center gap-10">
-            <div className="bg-darkgreen w-full flex justify-center">
+            <div className="bg-main w-full flex justify-center">
                 <h4 className="text-yellow text-3xl font-bold">Programming Languages</h4>
             </div>
 

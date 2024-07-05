@@ -1,7 +1,7 @@
 // Footer component
 export default function Footer() {
     return (
-        <footer className="flex flex-row items-center w-full text-xl text-white font bg-darkgreen p-2">
+        <footer className="flex flex-row items-center w-full text-xl text-white font bg-main p-2">
             <p>© 2024 Ilenia Maietta</p>
             <nav className="ml-auto">
                 {/* Navigational menu */}
