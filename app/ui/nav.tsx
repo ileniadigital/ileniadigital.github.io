@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 // Navigation component
 export default function Nav() {
     return (
         <nav className="flex flex-row items-center w-full">
-            {/* Logo
-            <div className="flex flex-row items-center">
+            {/* Logo */}
+            {/* <div className="flex flex-row items-center">
                 <a href="/"><Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={75} height={75} /></a>
                 <h1 className="text-2xl text-main font-bold">Ilenia Maietta</h1>
             </div> */}
@@ -25,6 +26,11 @@ export default function Nav() {
                     <button><a href="/contact" className="btn-inv">Contact</a></button>
                 </li>
             </ul>
+
+            {/* GitHub Link */}
+            <div className="flex flex-row items-center mr-3">
+                <a href="https://github.com/ileniadigital"><FaGithub size={50} color="#08BDBD" className="hover:scale-125" /></a>
+            </div>
         </nav>
     );
 }
