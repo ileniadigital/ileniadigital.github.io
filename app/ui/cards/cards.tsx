@@ -28,7 +28,7 @@ export default function Cards({ elements, title, image, autofit }: CardProps) {
     };
 
     return (
-        <section className="flex flex-col justify-center items-center gap-10 bg-main h-1/3 ">
+        <section className="flex flex-col justify-center items-center gap-10 bg-main h-1/3 pb-16">
             {/* Title */}
             <div className=" w-full flex justify-center">
                 <h4 className="text-black text-3xl font-bold mt-16">{title}</h4>
