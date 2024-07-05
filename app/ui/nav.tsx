@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function Nav() {
     return (
         <nav className="flex flex-row items-center w-full">
-            {/* Logo */}
+            {/* Logo
             <div className="flex flex-row items-center">
                 <a href="/"><Image src="/images/branding/logo.png" alt="Blue and yellow logo of letter I and M" width={75} height={75} /></a>
                 <h1 className="text-2xl text-main font-bold">Ilenia Maietta</h1>
-            </div>
+            </div> */}
 
             {/* Navigational menu */}
-            <ul className="flex flex-row gap-10 ml-auto mr-5 text-main text-xl">
+            <ul className="flex flex-row gap-10 ml-auto mr-auto mt-5 text-black text-xl bg-main rounded-full p-4 px-6">
                 <li>
                     <a href="/" className="lnk">Home</a>
                 </li>
@@ -22,7 +22,7 @@ export default function Nav() {
                     <a href="/projects" className="lnk">Projects</a>
                 </li>
                 <li>
-                    <button><a href="/contact" className="btn">Contact</a></button>
+                    <button><a href="/contact" className="btn-inv">Contact</a></button>
                 </li>
             </ul>
         </nav>

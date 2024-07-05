@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Main styles for buttons */
 .btn {
   @apply bg-main text-black hover:text-black hover:bg-main rounded-full p-3 hover:text-2xl hover:font-bold;
 }
 
+/* Inverted colours button */
+/* For backgrounds in main colours */
+.btn-inv {
+  @apply bg-offwhite text-black hover:text-black rounded-full p-3 hover:text-2xl hover:font-bold;
+}
+
+/* Styling for links */
 .lnk {
   @apply hover:text-2xl hover:font-bold;
 }
