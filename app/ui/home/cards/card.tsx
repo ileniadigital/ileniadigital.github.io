@@ -7,7 +7,7 @@ interface CardProps {
 // Card component
 export default function Card({ language }: CardProps) {
     return (
-        <div className='w-28 p-1 rounded-lg border-4 border-main grid grid-row-2'>
+        <div className='min-w-[12rem] p-3 rounded-lg grid grid-row-2 bg-offwhite shadow-lg'>
             <Image src={`/images/languages/${language}.png`} alt={language} width={100} height={100} className="h-24 ml-auto mr-auto" />
             <h5 className="text-m font-semibold h-4 ml-auto mr-auto">{language}</h5>
         </div>
