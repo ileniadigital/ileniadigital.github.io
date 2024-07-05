@@ -7,16 +7,16 @@ export default function Footer() {
                 {/* Navigational menu */}
                 <ul className="flex flex-row gap-10 ml-auto mr-5 text-white text-lg">
                     <li>
-                        <a href="/" className="hover:text-xl hover:font-bold">Home</a>
+                        <a href="/" className="lnk">Home</a>
                     </li>
                     <li>
-                        <a href="/about" className="hover:text-xl hover:font-bold">About</a>
+                        <a href="/about" className="lnk">About</a>
                     </li>
                     <li>
-                        <a href="/projects" className="hover:text-xl hover:font-bold">Projects</a>
+                        <a href="/projects" className="lnk">Projects</a>
                     </li>
                     <li>
-                        <a href="/contact" className="hover:text-xl hover:font-bold">Contact</a>
+                        <a href="/contact" className="lnk">Contact</a>
                     </li>
                 </ul>
             </nav>

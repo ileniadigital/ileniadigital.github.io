@@ -5,3 +5,7 @@
 .btn {
   @apply bg-main text-black hover:text-black hover:bg-main rounded-full p-3 hover:text-2xl hover:font-bold;
 }
+
+.lnk {
+  @apply hover:text-2xl hover:font-bold;
+}

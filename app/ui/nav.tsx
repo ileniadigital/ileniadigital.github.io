@@ -16,10 +16,10 @@ export default function Nav() {
                     <a href="/" className="lnk">Home</a>
                 </li>
                 <li>
-                    <a href="/about" className="hover:text-2xl hover:font-bold">About</a>
+                    <a href="/about" className="lnk">About</a>
                 </li>
                 <li>
-                    <a href="/projects" className="hover:text-2xl hover:font-bold">Projects</a>
+                    <a href="/projects" className="lnk">Projects</a>
                 </li>
                 <li>
                     <button><a href="/contact" className="btn">Contact</a></button>
