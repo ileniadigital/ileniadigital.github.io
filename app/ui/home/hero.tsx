@@ -37,7 +37,7 @@ export default function Hero() {
         <div >
             <main>
                 {/* Hero section */}
-                <div className='flex flex-row'>
+                <div className='flex flex-row h-2/3'>
                     <div className='flex flex-col gap-5 mt-40 ml-20'>
                         <h2 className="text-7xl font-semibold">Hi, I am Ilenia!</h2>
                         <h3><TypewriterEffect words={name} /></h3>

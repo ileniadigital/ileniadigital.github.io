@@ -36,10 +36,10 @@ export default function Languages() {
     };
 
     return (
-        <section className="flex flex-col justify-center items-center gap-10 bg-main ">
+        <section className="flex flex-col justify-center items-center gap-10 bg-main h-1/3 ">
             {/* Title */}
             <div className=" w-full flex justify-center">
-                <h4 className="text-black text-3xl font-bold mt-5">Programming Languages</h4>
+                <h4 className="text-black text-3xl font-bold mt-16">Programming Languages</h4>
             </div>
 
             <div className="relative flex flex-row justify-center items-center gap-3 w-full max-w-5xl">
@@ -51,7 +51,7 @@ export default function Languages() {
                 </div>
                 {/* Language cards */}
                 <div ref={scrollRef}
-                    className='w-2/3 flex flex-row gap-5 overflow-x-auto overflow-hidden  px-10'
+                    className='w-2/3 flex flex-row gap-5 overflow-x-auto overflow-hidden px-10 mb-5'
                     style={{ scrollSnapType: "x mandatory", scrollbarWidth: "none" }}>
 
                     {languages.map((language, index) => (
