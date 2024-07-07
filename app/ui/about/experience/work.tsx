@@ -17,18 +17,18 @@ export default function Work({ details }: WorkProps) {
                 <div key={index}>
                     {/* Title */}
                     <div className="flex flex-row justify-center mb-2 gap-3">
-                        <h5 className="font-bold text-xl">{detail.title}</h5>
+                        <h5 className="font-bold text-xl text-center">{detail.title}</h5>
                     </div>
                     {/* Logo and Employer */}
                     <div className="flex flex-row justify-center mb-2 gap-3">
-                        <p className='font-semibold'>{detail.place}</p>
+                        <p className='font-semibold text-center'>{detail.place}</p>
                         <Image src={detail.imagePath} alt={detail.title} width={25} height={25} />
 
                     </div>
                     {/* Description and dates */}
                     <div className="flex flex-col justify-center items-center mb-2 gap-3">
-                        <p className='font-semibold'>{detail.dates}</p>
-                        <p className='text-lg'>{detail.description}</p>
+                        <p className='font-semibold text-center'>{detail.dates}</p>
+                        <p className='text-lg text-center'>{detail.description}</p>
                         {detail.button && (
                             <button className='btn'>See my work</button>
                         )
