@@ -21,9 +21,8 @@ export default function Work({ details }: WorkProps) {
                     </div>
                     {/* Logo and Employer */}
                     <div className="flex flex-row justify-center mb-2 gap-3">
-                        <p className='font-semibold text-center'>{detail.place}</p>
                         <Image src={`/images/work/${detail.imagePath}`} alt={detail.title} width={25} height={25} />
-
+                        <p className='font-semibold text-center'>{detail.place}</p>
                     </div>
                     {/* Description and dates */}
                     <div className="flex flex-col justify-center items-center mb-2 gap-3">
