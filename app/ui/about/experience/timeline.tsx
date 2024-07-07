@@ -14,7 +14,7 @@ const details = [
     {
         title: 'Demonstrator',
         place: 'Queen Mary University of London',
-        imagePath: '/path/to/image1.jpg',
+        imagePath: 'qmul.jpeg',
         description: 'I support students in their learning, provide feedback, assess and mark their exam scripts, projects and courseworks',
         dates: 'January 2020 - March 2021',
         button: false,
@@ -22,7 +22,7 @@ const details = [
     {
         title: 'Student Ambassador',
         place: 'Queen Mary University of London',
-        imagePath: '/path/to/image2.jpg',
+        imagePath: 'qmul.jpeg',
         description: 'Assist in hosting and running university events such as Open Days, guide attendees on campus tours safely and informatively, answer questions and provide information about the course',
         dates: 'March 2023 - Present',
         button: false,
@@ -30,7 +30,7 @@ const details = [
     {
         title: 'Freelance Social Media Manager, Tutor, Develop, Ambassador',
         place: 'MyPocketSkill',
-        imagePath: '/path/to/image2.jpg',
+        imagePath: 'mps.jpg',
         description: "Develop personalised strategies for my clients' social media and websites. Prepare and teach programming lessons adapted to students' abilities and interests",
         dates: 'April 2023 - Present',
         button: true,
@@ -38,7 +38,7 @@ const details = [
     {
         title: 'Front-end Software Engineer Intern',
         place: 'eFitter',
-        imagePath: '/path/to/image2.jpg',
+        imagePath: 'efitter.jpeg',
         description: 'Design and develop the front-end of the eFitter customer dashboard',
         dates: 'March 2024 - April 2024',
         button: true,
@@ -46,7 +46,7 @@ const details = [
     {
         title: 'Young Creative',
         place: 'Fight For Peace',
-        imagePath: '/path/to/image2.jpg',
+        imagePath: 'ffp.png',
         description: 'Create and promote content for the Fight For Peace social media channels, support and host interviees for content days',
         dates: 'February 2023 - Present',
         button: true,
