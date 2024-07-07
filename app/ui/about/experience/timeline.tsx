@@ -12,24 +12,45 @@ import Work from './work';
 
 const details = [
     {
-        title: 'Work 1',
+        title: 'Demonstrator',
+        place: 'Queen Mary University of London',
         imagePath: '/path/to/image1.jpg',
-        description: 'Description 1',
-        dates: 'January 2020 - March 2021'
+        description: 'I support students in their learning, provide feedback, assess and mark their exam scripts, projects and courseworks',
+        dates: 'January 2020 - March 2021',
+        button: false,
     },
     {
-        title: 'Work 2',
+        title: 'Student Ambassador',
+        place: 'Queen Mary University of London',
         imagePath: '/path/to/image2.jpg',
-        description: 'Description 2',
-        dates: 'April 2021 - Present'
+        description: 'Assist in hosting and running university events such as Open Days, guide attendees on campus tours safely and informatively, answer questions and provide information about the course',
+        dates: 'April 2021 - Present',
+        button: false,
     },
     {
-        title: 'Work 3',
+        title: 'Freelance Social Media Manager, Tutor, Develop, Ambassador',
+        place: 'MyPocketSkill',
         imagePath: '/path/to/image2.jpg',
-        description: 'Description 2',
-        dates: 'April 2021 - Present'
+        description: '',
+        dates: 'April 2021 - Present',
+        button: true,
     },
-    // Add more work experiences here
+    {
+        title: 'Front-end Software Engineer Intern',
+        place: 'eFitter',
+        imagePath: '/path/to/image2.jpg',
+        description: 'a',
+        dates: 'April 2021 - Present',
+        button: true,
+    },
+    {
+        title: 'Young Creative',
+        place: 'Fight For Peace',
+        imagePath: '/path/to/image2.jpg',
+        description: '',
+        dates: 'February 2023 - Present',
+        button: true,
+    },
 ];
 
 export default function AlternateReverseTimeline() {
