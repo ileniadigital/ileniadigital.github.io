@@ -6,10 +6,10 @@ interface CardProps {
     bg: string
 }
 export default function Card({ title, bg }: CardProps) {
-    const cardStyle = `bg-${bg} bg-cover bg-center filter w-72 rounded-xl h-56 flex items-center justify-center`;
+    const cardStyle = `bg-${bg} bg-cover bg-center filter w-96 h-72 rounded-xl flex items-center justify-center`;
     return (
         <div className={cardStyle}>
-            <h1 className="text-3xl text-offwhite">{title}</h1>
+            <h1 className="text-4xl text-offwhite font-bold">{title}</h1>
         </div>
     );
 }

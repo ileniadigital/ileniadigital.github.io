@@ -1,23 +1,20 @@
-//Background images sources
-//Coding image: Photo by Danny Meneses from Pexels: https://www.pexels.com/photo/photo-of-turned-on-laptop-computer-943096/
-//Content creation image: Photo by Caio  : https://www.pexels.com/photo/turned-on-screen-silver-macbook-air-on-wooden-desk-56759/
-
-// Import UI components
 import Nav from '../ui/nav';
 import Footer from '../ui/footer';
 import Card from '../ui/projects/card';
 
 export default function Projects() {
     return (
-        <body>
+        <div className="flex flex-col min-h-screen">
             <Nav />
-            <main>
-                <div>
-                    <h1>My Projects</h1>
+            <main className="flex justify-center items-center flex-grow">
+                <div className='flex flex-row gap-44 justify-center items-center'>
                     <Card title="Programming" bg="coding" />
+                    <Card title="Content Creation" bg="content" />
                 </div>
             </main>
-            <Footer />
-        </body>
+            <div className='mt-auto'>
+                <Footer />
+            </div>
+        </div>
     )
 }
