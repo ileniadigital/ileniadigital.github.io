@@ -17,7 +17,7 @@ const details = [
         imagePath: 'bytequeens.png',
         description: 'I create and manage the content for the Byte Queens social media channels and newsletters',
         dates: 'June 2024 - Present',
-        button: false,
+        button: true,
     },
     {
         title: 'Demonstrator',
