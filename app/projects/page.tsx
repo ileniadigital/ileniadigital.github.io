@@ -9,8 +9,8 @@ export default function Projects() {
             <main className="flex flex-col justify-center items-center flex-grow gap-32">
                 <h1 className='text-5xl font-bold text-black'>Projects</h1>
                 <div className='flex flex-row gap-44 justify-center items-center'>
-                    <Card title="Swiftsheets" bg="coding" link="/programming" />
-                    <Card title="Content Creation" bg="content" link="/content" />
+                    <Card title="Programming" bg="/images/projects/coding.jpg" link="/programming" />
+                    <Card title="Content Creation" bg="/images/projects/content.jpg" link="/content" />
                 </div>
             </main>
             <div className='mt-auto'>

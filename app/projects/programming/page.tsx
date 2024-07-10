@@ -9,9 +9,9 @@ export default function Programming() {
             <main className="flex flex-col justify-center items-center flex-grow gap-32">
                 <h1 className='text-5xl font-bold text-black'>Programming Projects</h1>
                 <div className='flex flex-row gap-44 justify-center items-center'>
-                    <Card title="Swiftsheets" bg="coding" link="/programming/swiftsheets" />
-                    <Card title="Mountain Hikers Weather App" bg="content" link="/programming/weatherapp" />
-                    <Card title="eFitter customer dashboard" bg="content" link="/programming/efitter" />
+                    <Card title="Swiftsheets" bg="/images/projects/coding.jpg" link="/programming/swiftsheets" />
+                    <Card title="Mountain Hikers Weather App" bg="/images/projects/coding.jpg" link="/programming/weatherapp" />
+                    <Card title="eFitter customer dashboard" bg="/images/projects/coding.jpg" link="/programming/efitter" />
                 </div>
             </main>
             <div className='mt-auto'>
