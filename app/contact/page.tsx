@@ -1,15 +1,12 @@
-import Image from 'next/image';
-
-// Import UI components
 import Nav from '../ui/nav';
 import Footer from '../ui/footer';
 import Message from '../ui/contact/message';
 
 export default function Contact() {
     return (
-        <body>
+        <div>
+            <Nav />
             <main>
-                <Nav />
                 {/* Cards */}
                 <div className='flex flex-row gap-40 items-center justify-center mt-20'>
                     <Message message='Want to work together?' email={true} />
@@ -17,6 +14,8 @@ export default function Contact() {
                 </div>
                 <Footer />
             </main>
-        </body>
-    )
-}
+        </div>
+    );
+};
+
+
