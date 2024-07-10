@@ -12,11 +12,19 @@ import Work from './work';
 
 const details = [
     {
+        title: 'Content Manager (Volunteer)',
+        place: 'Byte Queens',
+        imagePath: 'bytequeens.png',
+        description: 'I create and manage the content for the Byte Queens social media channels and newsletters',
+        dates: 'June 2024 - Present',
+        button: false,
+    },
+    {
         title: 'Demonstrator',
         place: 'Queen Mary University of London',
         imagePath: 'qmul.jpeg',
         description: 'I support students in their learning, provide feedback, assess and mark their exam scripts, projects and coursework.',
-        dates: 'January 2020 - March 2021',
+        dates: 'January 2020 - Present',
         button: false,
     },
     {
