@@ -7,7 +7,7 @@ interface CardProps {
     link: string;
 }
 export default function Card({ title, bg, link }: CardProps) {
-    const cardStyle = `bg-${bg} bg-cover bg-center filter w-96 h-72 rounded-xl flex items-center justify-center hover:scale-105 transform transition duration-500 ease-in-out`;
+    const cardStyle = `bg-${bg} bg-cover bg-center filter w-96 h-72 rounded-xl flex items-center justify-center hover:scale-105`;
     const page = `/projects/${link}`;
     return (
         <div>
