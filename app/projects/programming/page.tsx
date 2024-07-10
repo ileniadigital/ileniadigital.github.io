@@ -11,6 +11,7 @@ export default function Programming() {
                 <div className='flex flex-row gap-44 justify-center items-center'>
                     <Card title="Swiftsheets" bg="coding" link="/programming/swiftsheets" />
                     <Card title="Mountain Hikers Weather App" bg="content" link="/programming/weatherapp" />
+                    <Card title="eFitter customer dashboard" bg="content" link="/programming/efitter" />
                 </div>
             </main>
             <div className='mt-auto'>
