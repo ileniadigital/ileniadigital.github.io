@@ -1,7 +1,7 @@
 import Nav from '../../../ui/nav';
 import Footer from '../../../ui/footer';
 
-export default function Swiftsheets() {
+export default function eFitter() {
     return (
         <div className="flex flex-col min-h-screen">
             <Nav />
