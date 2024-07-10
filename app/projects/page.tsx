@@ -14,7 +14,7 @@ export default function Projects() {
             <main>
                 <div>
                     <h1>My Projects</h1>
-                    <Card title="Programming" image="project1.png" />
+                    <Card title="Programming" bg="coding" />
                 </div>
             </main>
             <Footer />
