@@ -7,18 +7,22 @@ interface CardProps {
     bg: string;
     link: string;
 }
+
 export default function Card({ title, bg, link }: CardProps) {
     const page = `/projects/${link}`;
     return (
-        <div>
-            <button>
-                <Link href={page}>
-                    <div className="bg-main bg-cover bg-center filter w-120 h-96 rounded-xl flex flex-col items-center justify-center hover:scale-105">
-                        <Image src={bg} alt={bg} width={450} height={288} className='p-3' />
-                        <h1 className="text-xl text-black font-bold truncate">{title}</h1>
-                    </div>
-                </Link>
+        <Link href={page} className="block w-96 h-96">
+            <button className="w-full h-full bg-main rounded-xl hover:scale-105 flex flex-col justify-center items-center gap-5">
+                <div className="relative w-4/5 h-3/4 mx-auto">
+                    <Image
+                        src={bg}
+                        alt={bg}
+                        layout="fill"
+                        objectFit="cover"
+                    />
+                </div>
+                <h1 className="text-xl text-black font-bold truncate text-center pb-3">{title}</h1>
             </button>
-        </div>
+        </Link>
     );
 }
