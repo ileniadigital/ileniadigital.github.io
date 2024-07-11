@@ -40,29 +40,29 @@ export default function ProjectDetails({ title, description, images, languages, 
                         <div key={index} className="flex gap-4">
                             {link.instagram && (
                                 <Link href={link.instagram} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-[#0AEBEB] px-4 py-2 rounded-md text-white">
-                                        <FaInstagram />
+                                    <button className=" px-4 py-2 rounded-md">
+                                        <FaInstagram color='#0AEBEB' size={50} />
                                     </button>
                                 </Link>
                             )}
                             {link.linkedin && (
                                 <Link href={link.linkedin} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-[#0AEBEB] px-4 py-2 rounded-md text-white">
-                                        <FaLinkedin />
+                                    <button className="px-4 py-2 rounded-md">
+                                        <FaLinkedin color='#0AEBEB' size={50} />
                                     </button>
                                 </Link>
                             )}
                             {link.github && (
                                 <Link href={link.github} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-[#0AEBEB] px-4 py-2 rounded-md text-white">
-                                        <FaGithub />
+                                    <button className="px-4 py-2 rounded-md">
+                                        <FaGithub color='#0AEBEB' size={50} />
                                     </button>
                                 </Link>
                             )}
                             {link.website && (
                                 <Link href={link.website} target="_blank" rel="noopener noreferrer">
-                                    <button className="bg-[#0AEBEB] px-4 py-2 rounded-md text-white">
-                                        <FaGlobe />
+                                    <button className="px-4 py-2 rounded-md">
+                                        <FaGlobe color='#0AEBEB' size={50} />
                                     </button>
                                 </Link>
                             )}
