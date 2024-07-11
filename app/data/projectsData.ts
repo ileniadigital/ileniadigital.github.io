@@ -3,7 +3,7 @@ export const projects={
     {
         id: 'swiftsheets',
         title: 'Swiftsheets for FDM Group',
-        description: 'I developed a timesheet application for Consultants, Line Managers, System Administrators and Finance Team Members to submit and manage timesheets, and users for the Administrator. I developed it with a team of other students over the course of 6 weeks, suing React.js for the front-end and Django for the back-end.',
+        description: 'I developed a timesheet application for Consultants, Line Managers, System Administrators and Finance Team Members to submit and manage timesheets, and users for the Administrator. I developed it with a team of other students over the course of 6 weeks, using React.js for the front-end and Django for the back-end.',
         images: [
           '/images/projects/programming/swiftsheets/swiftsheets.png',
           '/images/projects/programming/swiftsheets/events.png',

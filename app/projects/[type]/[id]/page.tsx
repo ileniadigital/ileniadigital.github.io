@@ -20,9 +20,6 @@ export default function Project() {
     const type = pathParts[2];
     const id = pathParts[3];
 
-    console.log('Type:', type);
-    console.log('ID:', id);
-
     if (!type || !id) {
         return <p>Project not found</p>;
     }
