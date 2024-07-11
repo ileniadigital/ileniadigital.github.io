@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link
+    from 'next/link';
 interface WorkProps {
     details: {
         title: string;
@@ -7,6 +9,7 @@ interface WorkProps {
         description: string;
         dates: string;
         button: boolean;
+        link: string;
     }[];
 }
 
@@ -29,7 +32,9 @@ export default function Work({ details }: WorkProps) {
                         <p className='font-semibold text-center'>{detail.dates}</p>
                         <p className='text-lg text-center'>{detail.description}</p>
                         {detail.button && (
-                            <button className='btn'>See my work</button>
+                            <Link href={detail.link}>
+                                <button className='btn'>See my work</button>
+                            </Link>
                         )
                         }
                     </div>
