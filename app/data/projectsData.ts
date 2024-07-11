@@ -12,6 +12,14 @@ export const projects={
           '/images/projects/programming/swiftsheets/timesheet.png',
         ],
         languages: ['React.js', 'JavaScript', 'Django'],
+        links: [
+          {
+            instagram: 'https://www.instagram.com/fightforpeace/',
+            linkedin: '',
+            github: '',
+            website: 'https://fightforpeace.net/',
+          }
+        ],
       },
       {
         id: 'weatherapp',
@@ -28,6 +36,14 @@ export const projects={
           '/images/projects/programming/weatherapp/mobile_windmap.png',
         ],
         languages: ['React.js', 'JavaScript', 'CSS'],
+        links: [
+          {
+            instagram: 'https://www.instagram.com/fightforpeace/',
+            linkedin: '',
+            github: '',
+            website: 'https://fightforpeace.net/',
+          }
+        ],
       },
       {
         id: 'efitter',
@@ -37,6 +53,14 @@ export const projects={
           '/images/projects/programming/efitter.png',
         ],
         languages: ['Next.js', 'TypeScript', 'Django'],
+        links: [
+          {
+            instagram: 'https://www.instagram.com/fightforpeace/',
+            linkedin: '',
+            github: '',
+            website: 'https://fightforpeace.net/',
+          }
+        ],
       },
     ],
     content:[
@@ -49,6 +73,14 @@ export const projects={
             '/images/projects/content/fightforpeace/women_in_sport_white.png',
           ],
           languages: ['Adobe Illustrator', 'Adobe Premiere Pro', 'Adobe Photoshop', 'Canva', 'Audacity'],
+          links: [
+            {
+              instagram: 'https://www.instagram.com/fightforpeace/',
+              linkedin: '',
+              github: '',
+              website: 'https://fightforpeace.net/',
+            }
+          ]
         },
         {
           id: 'bytequeens',
@@ -58,6 +90,14 @@ export const projects={
             '/images/projects/content/bytequeens/logo.png',
           ],
           languages: ['Adobe Illustrator', 'Canva', 'FIGMA'],
+          links: [
+            {
+              instagram: '',
+              linkedin: 'https://www.instagram.com/fightforpeace/',
+              github: '',
+              website: 'https://fightforpeace.net/',
+            }
+          ],
         },
         {
           id: 'socialmedia',
@@ -75,6 +115,15 @@ export const projects={
             "/images/projects/content/socialmedia/yoga_3.png",
           ],
           languages: ['Adobe Illustrator', 'Canva', 'Meta Business Suite', 'Adobe Premiere Pro'],
+          links: [
+            {
+              instagram: 'https://www.instagram.com/fightforpeace/',
+              linkedin: '',
+              github: 'https://fightforpeace.net/',
+              website: '',
+            }
+          ],
         },
+        
       ],
 };

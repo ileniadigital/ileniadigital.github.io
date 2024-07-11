@@ -8,7 +8,7 @@ import Experience from '../ui/about/experience';
 
 export default function About() {
     return (
-        <body>
+        <div>
             <Nav />
             <main className='flex flex-row mt-5'>
                 <Aside />
@@ -33,6 +33,6 @@ export default function About() {
                 </div>
             </main>
             <Footer />
-        </body>
+        </div>
     )
 }

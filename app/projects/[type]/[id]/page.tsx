@@ -13,6 +13,12 @@ interface Projects {
         description: string;
         images: string[];
         languages: string[];
+        links: {
+            instagram?: string;
+            linkedin?: string;
+            github?: string;
+            website?: string;
+        }[];
     }[];
 }
 
@@ -41,6 +47,7 @@ export default function Project() {
                     description={project.description}
                     images={project.images}
                     languages={project.languages}
+                    links={project.links}
                 />
             </div>
             <Footer />
