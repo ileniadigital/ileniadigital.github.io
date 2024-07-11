@@ -14,10 +14,10 @@ export const projects={
         languages: ['React.js', 'JavaScript', 'Django'],
         links: [
           {
-            instagram: 'https://www.instagram.com/fightforpeace/',
-            linkedin: '',
-            github: '',
-            website: 'https://fightforpeace.net/',
+            instagram: '',
+            linkedin: 'https://www.linkedin.com/in/ilenia-maietta/details/projects/',
+            github: 'https://github.com/ileniadigital/SwiftSheets',
+            website: '',
           }
         ],
       },
@@ -38,10 +38,10 @@ export const projects={
         languages: ['React.js', 'JavaScript', 'CSS'],
         links: [
           {
-            instagram: 'https://www.instagram.com/fightforpeace/',
-            linkedin: '',
-            github: '',
-            website: 'https://fightforpeace.net/',
+            instagram: '',
+            linkedin: 'https://www.linkedin.com/in/ilenia-maietta/details/projects/',
+            github: 'https://github.com/ileniadigital/Mountain-Hikers-Weather-App',
+            website: '',
           }
         ],
       },
@@ -55,10 +55,10 @@ export const projects={
         languages: ['Next.js', 'TypeScript', 'Django'],
         links: [
           {
-            instagram: 'https://www.instagram.com/fightforpeace/',
-            linkedin: '',
-            github: '',
-            website: 'https://fightforpeace.net/',
+            instagram: '',
+            linkedin: 'https://www.linkedin.com/in/ilenia-maietta/details/projects/',
+            github: 'https://github.com/ileniadigital/eFitter-internship-B2C-dashboard',
+            website: '',
           }
         ],
       },
@@ -76,7 +76,7 @@ export const projects={
           links: [
             {
               instagram: 'https://www.instagram.com/fightforpeace/',
-              linkedin: '',
+              linkedin: 'https://www.linkedin.com/company/fight-for-peace/mycompany/verification/',
               github: '',
               website: 'https://fightforpeace.net/',
             }
@@ -92,10 +92,10 @@ export const projects={
           languages: ['Adobe Illustrator', 'Canva', 'FIGMA'],
           links: [
             {
-              instagram: '',
-              linkedin: 'https://www.instagram.com/fightforpeace/',
+              instagram: 'https://www.instagram.com/bytequeens/',
+              linkedin: 'https://www.linkedin.com/company/104194929/admin/feed/posts/',
               github: '',
-              website: 'https://fightforpeace.net/',
+              website: '',
             }
           ],
         },
@@ -117,9 +117,9 @@ export const projects={
           languages: ['Adobe Illustrator', 'Canva', 'Meta Business Suite', 'Adobe Premiere Pro'],
           links: [
             {
-              instagram: 'https://www.instagram.com/fightforpeace/',
-              linkedin: '',
-              github: 'https://fightforpeace.net/',
+              instagram: '',
+              linkedin: 'https://www.linkedin.com/in/ilenia-maietta/details/projects/',
+              github: '',
               website: '',
             }
           ],
