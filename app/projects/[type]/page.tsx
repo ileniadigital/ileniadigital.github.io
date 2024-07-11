@@ -44,7 +44,7 @@ export default function ProjectType() {
                             key={project.id}
                             title={project.title}
                             bg={project.images[0]}
-                            link={`/${type}/${project.id}`}
+                            link={`${type}/${project.id}`}
                         />
                     ))}
                 </div>
