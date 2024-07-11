@@ -1,7 +1,11 @@
 "use client";
 // pages/projects/[type]/[id].tsx
 import { usePathname } from 'next/navigation';
+
+// Import data
 import { projects } from '../../../data/projectsData';
+
+// Import UI components
 import ProjectDetails from '../../../ui/projects/projectDetails';
 import Footer from '@/app/ui/footer';
 import Nav from '@/app/ui/nav';
@@ -31,7 +35,7 @@ export default function Project() {
     if (!type || !id) {
         return <p>Project not found</p>;
     }
-
+    // Retrieve project data
     const project = (projects as Projects)[type]?.find((project) => project.id === id);
 
     if (!project) {
