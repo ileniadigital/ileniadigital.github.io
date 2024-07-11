@@ -1,9 +1,4 @@
-// components/ProjectDetails.tsx
-import Image from 'next/image';
-
 //Import UI components
-import Nav from '../nav';
-import Footer from '../footer';
 import ImageGallery from './gallery';
 
 interface ProjectDetailsProps {
@@ -15,23 +10,19 @@ interface ProjectDetailsProps {
 
 export default function ProjectDetails({ title, description, images, languages }: ProjectDetailsProps) {
     return (
-        <div>
-            <Nav />
-            <div className="flex flex-col md:flex-row gap-8 p-4">
-                <div className="flex flex-col md:w-1/2">
-                    <ImageGallery images={images} />
-                </div>
-                <div className="flex flex-col md:w-1/2">
-                    <h1 className="text-2xl font-bold mb-4">{title}</h1>
-                    <p className="mb-4">{description}</p>
-                    <div className="flex flex-wrap gap-2">
-                        {languages.map((lang, index) => (
-                            <span key={index} className="bg-gray-200 px-2 py-1 rounded-md">{lang}</span>
-                        ))}
-                    </div>
+        <div className="flex flex-row gap-10 w-10/12 justify-center items-center">
+            <div>
+                <ImageGallery images={images} />
+            </div>
+            <div className="flex flex-col w-1/2 gap-4 justify-center items-center">
+                <h1 className="text-3xl font-bold">{title}</h1>
+                <p className="mb-4 text-xl text-justify">{description}</p>
+                <div className="flex flex-wrap gap-6">
+                    {languages.map((lang, index) => (
+                        <span key={index} className="bg-main px-2 py-1 rounded-md text-lg">{lang}</span>
+                    ))}
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

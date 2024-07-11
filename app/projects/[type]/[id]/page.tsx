@@ -3,6 +3,8 @@
 import { usePathname } from 'next/navigation';
 import { projects } from '../../../data/projectsData';
 import ProjectDetails from '../../../ui/projects/projectDetails';
+import Footer from '@/app/ui/footer';
+import Nav from '@/app/ui/nav';
 
 interface Projects {
     [key: string]: {
@@ -31,13 +33,17 @@ export default function Project() {
     }
 
     return (
-        <div className="container mx-auto p-4">
-            <ProjectDetails
-                title={project.title}
-                description={project.description}
-                images={project.images}
-                languages={project.languages}
-            />
+        <div className="flex flex-col min-h-screen gap-32">
+            <Nav />
+            <div className="flex-grow mr-auto ml-auto flex justify-center">
+                <ProjectDetails
+                    title={project.title}
+                    description={project.description}
+                    images={project.images}
+                    languages={project.languages}
+                />
+            </div>
+            <Footer />
         </div>
     );
 }
