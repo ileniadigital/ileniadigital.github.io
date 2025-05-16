@@ -13,7 +13,7 @@ export default function Home() {
         {/* Hero section */}
         <Hero />
         {/* Programming Languages */}
-        <Languages />
+        {/* <Languages /> */}
       </main >
       {/* Footer */}
       <Footer />

@@ -23,11 +23,19 @@ const name = [
         className: "!text-black text-3xl",
     },
     {
+        text: "Byte",
+        className: "!text-black text-3xl",
+    },
+    {
+        text: "Queens",
+        className: "!text-black text-3xl",
+    },
+    {
         text: "Content",
         className: "!text-black text-3xl",
     },
     {
-        text: "Creator.",
+        text: "Manager",
         className: "!text-black text-3xl",
     },
 ];
@@ -35,26 +43,31 @@ const name = [
 export default function Hero() {
     return (
         <div >
-            <main>
-                {/* Hero section */}
-                <div className='flex flex-row h-2/3'>
-                    <div className='flex flex-col gap-5 mt-40 ml-20'>
+            <main className="w-full h-full min-h-screen flex flex-col">
+                <div className='flex flex-row flex-1'>
+                    {/* Left column */}
+                    <div className='flex flex-col gap-5 mt-40 ml-20 max-w-xl flex-shrink-0'>
                         <h2 className="text-7xl font-semibold">Hi, I am Ilenia!</h2>
-                        <h3><TypewriterEffect words={name} /></h3>
-                        {/* Programming languages icons */}
-                        <div>
-
-                        </div>
-                        <button className='w-56 ml-32 text-xl btn '><a href="/projects">See my projects</a></button>
+                        <h2 className="text-3xl justify-normal ">
+                            I am a Software Engineering Intern at Millennium, studying Computer Science at university. I focus on developing smooth and intuitive user experiences, to render technology suitable for all.
+                        </h2>
+                        <button className='w-56 ml-32 text-xl btn '>
+                            <a href="/projects">See my projects</a>
+                        </button>
                     </div>
 
-                    {/* Portrait */}
-                    <figure className='mr-auto ml-32 '>
-                        <Image src='/images/portrait_no_bckg.png' alt="yellow, green and pink portrait of Ilenia" width={400} height={1200}></Image>
-                    </figure>
-
-                </div >
-
+                    {/* Right column - Portrait */}
+                    <div className="relative flex-1 h-[500px] md:h-[700px]">
+                        <Image
+                            src='/images/portrait_no_bckg.png'
+                            alt="yellow, green and pink portrait of Ilenia"
+                            fill
+                            style={{ objectFit: 'contain' }}
+                            sizes="(min-width: 768px) 50vw, 100vw"
+                            priority
+                        />
+                    </div>
+                </div>
             </main >
         </div >
     );
