@@ -10,7 +10,7 @@
 /* Inverted colours button */
 /* For backgrounds in main colours */
 .btn-inv {
-  @apply bg-offwhite text-black hover:text-black rounded-full p-3 hover:text-2xl hover:font-bold;
+  @apply bg-accent text-white hover:text-white rounded-full p-3 hover:text-2xl hover:font-bold;
 }
 
 /* Styling for links */

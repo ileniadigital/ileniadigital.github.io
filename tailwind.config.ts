@@ -18,7 +18,7 @@ const config: Config = {
       colors:{
         main: "#B1D699",
         offwhite: '#f5f5f5',
-        accent: '#0AEBEB',
+        accent: '#b1d699',
       }
     },
   },
