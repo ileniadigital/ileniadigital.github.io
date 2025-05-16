@@ -12,8 +12,6 @@ export default function Home() {
       <main>
         {/* Hero section */}
         <Hero />
-        {/* Programming Languages */}
-        {/* <Languages /> */}
       </main >
       {/* Footer */}
       <Footer />
