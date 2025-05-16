@@ -47,7 +47,16 @@ export default function Hero() {
                 <div className='flex flex-row flex-1'>
                     {/* Left column */}
                     <div className="flex flex-col gap-5 mt-20 md:mt-40 ml-5 md:ml-20 max-w-xl flex-shrink-0">
-                        <h2 className="text-5xl md:text-7xl font-semibold">Hi, I am Ilenia!</h2>
+                        {/* <h2 className="text-5xl md:text-7xl font-semibold">Hi, I am Ilenia!</h2> */}
+                        <TypewriterEffect
+                            words={[
+                                {
+                                    text: "Hi, I am Ilenia!",
+                                    className: "text-5xl md:text-7xl font-semibold",
+                                },
+                            ]}
+                            className="text-5xl md:text-7xl font-semibold"
+                        />
                         <h3 className="text-xl md:text-3xl justify-normal ">
                             I am a Software Engineering Intern at Millennium, studying Computer Science at university. I focus on developing smooth and intuitive user experiences, to render technology suitable for all.
                         </h3>

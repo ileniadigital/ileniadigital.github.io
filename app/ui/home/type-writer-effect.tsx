@@ -20,7 +20,7 @@ export const TypewriterEffect = ({
     const wordsArray = words.map((word) => {
         return {
             ...word,
-            text: word.text.split(""),
+            text: word.text.split(" ").map(w => w.split("")),
         };
     });
 
@@ -47,25 +47,26 @@ export const TypewriterEffect = ({
     const renderWords = () => {
         return (
             <motion.div ref={scope} className="inline">
-                {wordsArray.map((word, idx) => {
-                    return (
-                        <div key={`word-${idx}`} className="inline-block">
-                            {word.text.map((char, index) => (
+                {wordsArray.map((word, idx) =>
+                    word.text.map((chars, wIdx) => (
+                        <span key={`word-${idx}-${wIdx}`} className="inline-block">
+                            {chars.map((char, cIdx) => (
                                 <motion.span
                                     initial={{}}
-                                    key={`char-${index}`}
+                                    key={`char-${cIdx}`}
                                     className={cn(
-                                        `dark:text-white text-black opacity-0 hidden`,
+                                        "text-black opacity-0 hidden",
                                         word.className
                                     )}
                                 >
                                     {char}
                                 </motion.span>
                             ))}
-                            &nbsp;
-                        </div>
-                    );
-                })}
+                            {/* Add a real space after each word except the last */}
+                            {wIdx < word.text.length - 1 && <span>&nbsp;</span>}
+                        </span>
+                    ))
+                )}
             </motion.div>
         );
     };
@@ -122,7 +123,7 @@ export const TypewriterEffectSmooth = ({
             <div>
                 {wordsArray.map((word, idx) => {
                     return (
-                        <div key={`word-${idx}`} className="inline-block">
+                        <span key={`word-${idx}`} className="inline-block">
                             {word.text.map((char, index) => (
                                 <span
                                     key={`char-${index}`}
@@ -131,8 +132,9 @@ export const TypewriterEffectSmooth = ({
                                     {char}
                                 </span>
                             ))}
-                            &nbsp;
-                        </div>
+                            {/* Add a real space after each word except the last */}
+                            {idx < wordsArray.length - 1 && <span>&nbsp;</span>}
+                        </span>
                     );
                 })}
             </div>
