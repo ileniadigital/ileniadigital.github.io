@@ -8,6 +8,7 @@ export const TypewriterEffect = ({
     words,
     className,
     cursorClassName,
+    onComplete,
 }: {
     words: {
         text: string;
@@ -15,6 +16,7 @@ export const TypewriterEffect = ({
     }[];
     className?: string;
     cursorClassName?: string;
+    onComplete?: () => void;
 }) => {
     // split text inside of words into array of characters
     const wordsArray = words.map((word) => {
@@ -40,10 +42,11 @@ export const TypewriterEffect = ({
                     delay: stagger(0.1),
                     ease: "easeInOut",
                 }
-            );
+            ).then(() => {
+                if (onComplete) onComplete();
+            });
         }
-    }, [isInView]);
-
+    }, [isInView, animate, onComplete]);
     const renderWords = () => {
         return (
             <motion.div ref={scope} className="inline">
