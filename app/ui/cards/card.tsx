@@ -1,26 +1,33 @@
-import Image from 'next/image';
+interface Module {
+    name: string;
+    description: string;
+    grade: string;
+    projectLink?: string;
+}
 
-//Props passed to Card component
-//Language is the name of the language or module to be displayed
-//Image is a boolean that determines if an image should be displayed
-//Autofit is a boolean that determines if the card should autofit or be given a specific size
 interface CardProps {
-    language: string;
-    image: boolean;
+    module: Module;
     autofit: boolean;
 }
 
-// Card component
-//Used to display languages in the home page and the modules in the about me section
-export default function Card({ language, image, autofit }: CardProps) {
+export default function Card({ module, autofit }: CardProps) {
     return (
-        <div className={`p-3 rounded-lg grid grid-row-2 bg-offwhite shadow-lg ${autofit ? 'min-w-[20rem]' : 'min-w-[12rem]'}`}>
-            {
-                image && (
-                    <Image src={`/images/languages/${language}.png`} alt={language} width={100} height={100} className="h-24 ml-auto mr-auto" />
-                )
-            }
-            <h5 className="text-m font-semibold h-4 ml-auto mr-auto">{language}</h5>
-        </div >
+        <div className={`p-3 rounded-lg grid grid-rows-3 bg-offwhite shadow-lg ${autofit ? 'min-w-[20rem]' : 'min-w-[12rem]'}`}>
+            <h5 className="text-lg font-semibold mb-2">{module.name}</h5>
+            <p className="text-sm mb-2">{module.description}</p>
+            <div className="flex flex-row justify-between items-center">
+                <span className="font-bold">Grade: {module.grade}</span>
+                {module.projectLink && (
+                    <a
+                        href={module.projectLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn text-xs ml-2"
+                    >
+                        View Project
+                    </a>
+                )}
+            </div>
+        </div>
     );
 }

@@ -1,24 +1,8 @@
 import Image from 'next/image';
-//Import UI Components
+// Import UI Components
 import Cards from "../cards/cards";
-
-const modules = [
-    "Procedural Programming",
-    "Object Oriented Programming",
-    "Web Technologies",
-    "Professional Research and Practice",
-    "Logic and Discrete Structures",
-    "Computer Systems and Networks",
-    "Automata and Formal Languages",
-    "Information System Analysis",
-    "Probability and Matrices",
-    "Database Systems",
-    "Software Engineering",
-    "Algorithms and Data Structures",
-    "Operating Systems",
-    "Graphical User Interfaces",
-    "Internet Protocols"
-]
+// Import data
+import modules from "../../data/modulesData";
 
 // Education component with details of education
 export default function Education() {
@@ -33,7 +17,7 @@ export default function Education() {
                     <h2 className='text-2xl font-bold mt-2'>Queen Mary University of London (2022-2026)</h2>
                 </div>
             </div>
-            <Cards elements={modules} title="Modules studied" image={false} autofit />
+            <Cards elements={modules} title="Modules studied" autofit />
         </section>
     );
 }
