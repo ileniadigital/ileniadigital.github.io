@@ -4,7 +4,6 @@ import Card from "../cards/card";
 
 interface Module {
     name: string;
-    description: string;
     grade: string;
     projectLink?: string;
 }
